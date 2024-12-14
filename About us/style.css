@@ -1,0 +1,181 @@
+/* Custom styles */
+@font-face {
+    font-family: myFirstFont;
+    src: url(Gilroy-Bold.ttf);
+}
+:root {
+    --color1white : #ffffff ;
+    --color2black : #232323;
+    --color3grey : rgba(151, 151, 151, 0.553);
+}
+* {
+    /* font-family: myFirstFont; */
+    margin: 0;
+    /* color: var(--color2black); */
+    padding: 0;
+    box-sizing: border-box !important;
+    
+}
+
+body {
+    background-color: var(--color1white) !important;
+    overflow-x: hidden;
+}
+
+/* .row{
+     color: rgba(151, 151, 151, 0) !important} */
+    .PAGE0{
+        font-size: larger;
+        margin-top: 100px;
+        align-items: center;
+        width: 100% !important;
+        height: 550px !important;
+        
+    }
+    .PAGE1{
+        align-items: center;
+        width: 100% !important;
+        height: 400PX !important;
+        background-color: var(--color3grey) !important;
+        border-radius: 15px;
+        box-shadow: 10 10px 30px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .PAGE1 h1{
+        margin-top: 100px;
+    }
+
+    .PAGE2{
+        font-size: larger;
+        margin-top: 100px;
+        align-items: center;
+        width: 100% !important;
+        
+    }
+
+  
+
+    @media (max-width: 767px) {
+        .PAGE0 {
+            height: 6000px;
+        }
+        .PAGE1 h1{
+            margin-top: 320px;
+        }
+
+
+        .PAGE1 {
+            height: 650px !important; 
+            margin-top : 280px;
+    }
+
+    .PAGE2{
+        margin-top: 380px;
+    }
+   
+}
+
+
+
+/* ------------video----------------- */
+
+.videopage{margin-top: 100px;}
+
+/* Use a flexbox on the grid container */
+.grid {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; /* Space between video and text */
+    align-items: center !important;  
+    width: 1000px;
+    height: 450px; /* Full viewport height */
+    gap: 20px; /* Space between video and text */
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.video {
+    flex: 1; /* Video will take up equal space */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 13px;
+}
+
+video {
+    width: 100%;
+    height: 100%; /* Make video take full height */
+    object-fit: cover; /* Make sure video scales properly without distortion */
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.grid{
+    background-color: var(--color3grey) !important;
+}
+
+.text {
+    flex: 1; /* Text will take up equal space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Vertically align content */
+    align-items: flex-start; /* Align items to the left */
+}
+
+/* h2 styling */
+.text h2 {
+    font-size: 28px;
+    color: var(--color2black);
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    transition: color 0.1s;
+}
+
+/* Paragraph styling */
+.text p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    /* color: #332e2e; */
+    line-height: 1.5;
+}
+
+
+/* Button styling */
+.button {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--color1white);
+    background-color: var(--color2black);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.2s;
+}
+
+
+
+.button:hover {
+    background-color: #fefefe00;
+    transform: scale(1.1);
+    color: var(--color1white);
+    border: 1px solid var(--color3grey);
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 768px) {
+
+
+    .grid {
+        flex-direction: column; /* Stack video and text vertically on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .video {
+        height: 300px; /* Adjust video height for small screens */
+    }
+}

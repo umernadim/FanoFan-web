@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon"  href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="Navbar"></div>
+
+    
+    <div class="container2">
+        <img src="from image.jpg" alt="Contact Us Image">
+        <h1><i>Contact Us</i></h1>
+    </div>
+
+    <div class="container">
+        <!-- <h1>Contact With Us</h1> -->
+        <p>We would love to respond to your queries and help you succeed.Feel free to get in touch with us.</p>
+
+        <!-- Main Content Box -->
+        <div class="contant-box">
+            <!-- Left Section: Contact Form -->
+            <div class="contact-left" id="contactFormContainer">
+                <h3>Send your request</h3>
+                <form id="contactForm">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input id="inputName" type="text" placeholder="Enter your name" >
+                            <p style="color: rgb(243, 13, 13);" id="Name-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredNameError"></p>
+                            
+                        </div>
+                        <div class="input-group">
+                            <input id="inputPhone" type="text" placeholder="Enter your phone" >
+                            <p style="color: rgb(243, 13, 13);" id="Phone-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredPhoneError"></p>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input id="inputEmail" type="email" placeholder="Enter your email" >
+                            <p style="color: rgb(243, 13, 13);" id="Email-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredEmailError"></p>
+                        </div>
+                        <div class="input-group">
+                            <input id="inputText" type="text" placeholder="Enter your subject">
+                            <p style="color: rgb(243, 13, 13);" id="subject-error"></p>
+                            <p style="color: rgb(243, 13, 13);" id="RequiredSubjectError"></p>
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Enter your message" id="inputMessage"></textarea>
+                    <p style="color: rgb(243, 13, 13);" id="RequiredMessageError"></p>
+                    <button class="btn" id="btn" type="submit">Send</button>
+                </form>
+                <div class="privacy-statement">
+                    <h3>Privacy Statement</h3>
+                    <p>
+                        Your privacy is important to us.
+                     For more information, please read our <a href="Document.pdf">Privacy Policy</a>.
+                    </p>
+                </div>
+                
+            </div>
+
+            <!-- Hidden Thank You Message -->
+            <div class="contact-left" id="thankYouMessage" style="display: none;">
+                <h3>Thank You!</h3>
+                <p>Your message has been successfully sent. We will get back to you shortly.</p>
+            </div>
+
+            <!-- Right Section: Contact Details -->
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>Fanofan@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+92 344 819 3852</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>#07475, Ground Floor, 7th Cross,<br>
+                            Block H, Shahrah-e-Humayun, North Nazimabad <br>
+                            Karachi, Sindh, Pakistan</td>
+                    </tr>
+                </table>
+                <div class="privacy-statement" style="margin-top: 100px; ">
+                    <h3>Privacy Statement</h3>
+                    <p>
+                        Your privacy is important to us.
+                     For more information, please read our <a href="#">Privacy Policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- FAQ Section -->
+
+<!-- FAQ Section -->
+<div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">What is Fanofan? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+            <p>Fanofan is a brand that offers high-quality fans designed to keep you cool and stylish.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">How can I track my order? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+            <p>You can track your order by entering your tracking ID on the 'Track Your Order' page.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">What is the warranty policy? <span class="arrow">▼</span></button>
+        <div class="faq-answer">
+            <p>We offer a 1-year warranty on all Fanofan products. For more details, visit our Warranty page.</p>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    <!-- Map Section -->
+
+    <div class="container-map">
+        <h1>Our Map Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d57886.28076461594!2d67.02150874977677!3d24.935730184361198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!3m2!1d24.937214599999997!2d67.042281!4m0!5e0!3m2!1sen!2s!4v1728401139504!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+
+
+    
+   
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/670775d102d78d1a30ef5beb/1i9qi8fgu';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+<div id="footer"></div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+<script src="script.js"></script>
+    <script>
+        // -----------nav & footer-------
+
+        $(document).ready(()=>{
+
+$.get('../navbar.html',(data)=>{
+    $('#Navbar').html(data)
+})
+$.get('../footer.html',(data)=>{
+    $('#footer').html(data)
+})
+})
+    </script>
+</body>
+
+</html>
